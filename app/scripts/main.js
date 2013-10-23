@@ -12,7 +12,8 @@ require.config({
         bootstrapScrollspy: '../bower_components/sass-bootstrap/js/scrollspy',
         bootstrapTab: '../bower_components/sass-bootstrap/js/tab',
         bootstrapTooltip: '../bower_components/sass-bootstrap/js/tooltip',
-        bootstrapTransition: '../bower_components/sass-bootstrap/js/transition'
+        bootstrapTransition: '../bower_components/sass-bootstrap/js/transition',
+        text: '../bower_components/requirejs-text/text'
     },
     shim: {
         bootstrapAffix: {
@@ -54,7 +55,7 @@ require.config({
     }
 });
 
-require(['app', 'jquery'], function (app, $) {
+require(['app', 'jquery', 'text!test.txt'], function (app, $) {
     'use strict';
     // use app here
     console.log(app);
